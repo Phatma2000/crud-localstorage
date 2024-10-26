@@ -1,24 +1,7 @@
 //? CRUD - Create, Read, Update, Delete
 
-// const userList = ["Emin", "Fatma", "Eylul"];
-// localStorage.setItem("name", JSON.stringify(userList));
-
-// const getStorage = JSON.parse(localStorage.getItem("name"));
-// console.log(getStorage);
-
-// localStorage.setItem("user", JSON.stringify(userList));
-
-// localStorage.removeItem("user");
-
-// userList.splice(1, 1); // 1ci indexden basla 1 dene sil, 2 yazsaq Eylulde gedecekdi.
-// localStorage.setItem("name", JSON.stringify(userList));
-
-// const nameList = document.querySelector("#nameList");
-
-// nameList.innerHTML = getStorage;
-
-let userList = []; // bos arrayim olsun her yerde use.
-let getUser; // deyisken create
+let userList = [];
+let getUser;
 let nameListDOM = document.querySelector("#nameList");
 
 // localStorage.setItem("userList", JSON.stringify(userList));
@@ -52,11 +35,6 @@ function Read() {
     }
   }
 }
-
-// function Edit(item) {
-//   console.log(item);
-// }
-
 function Create() {
   const storage = JSON.parse(localStorage.getItem("userList"));
   let inputText = document.querySelector("#name").value;
