@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CRUD - localStorage</h1>
+      <form id="form">
+        <input
+          type="text"
+          id="name"
+          placeholder="Add new user"
+          autocomplete="off"
+        />
+        <button class="success">
+          <i class="fas fa-plus"></i>
+        </button>
+      </form>
+
+      <div class="user" id="nameList">
+        <div class="user-item">
+          <p>
+            <i class="fas fa-user"></i>
+            <span>User:</span> Name
+          </p>
+          <button class="primary" onclick="Edit()">
+            <i class="fas fa-edit"></i>
+            Edit
+          </button>
+          <button class="danger" onclick="Delete()">
+            <i class="fas fa-trash"></i>
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
